@@ -23,8 +23,9 @@ public class UserController {
         return userService.onBoardUser(user);
     }
 
-    @PutMapping
-    public User updateUser(@RequestBody User user) {
+    @PutMapping("/{userId}")
+    public User updateUser(@PathVariable("userId") String userId,@RequestBody  User user) {
+        user.setUserId(userId);
         return userService.onBoardUser(user);
     }
 
