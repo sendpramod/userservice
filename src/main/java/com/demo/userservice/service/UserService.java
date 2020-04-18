@@ -10,4 +10,6 @@ public interface UserService {
     public User onBoardUser(User user);
 
     public List<User> getAllUsers();
+
+    public User findUserByEmailOrMobileNo(String emailId, String mobileNo);
 }

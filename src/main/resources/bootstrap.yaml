@@ -5,6 +5,6 @@ spring:
     active: dev
   cloud:
     config:
-      uri: http://localhost:8585/config-server
-      name: ${spring.application.name}
+      uri: http://127.0.0.1:8696/config-server/config-server
+      name: ${spring.application.name},common
       fail-fast: true

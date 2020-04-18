@@ -28,4 +28,10 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUsers() {
         return userRepo.findAll();
     }
+
+    @Override
+    public User findUserByEmailOrMobileNo(String emailId, String mobileNo) {
+        userRepo.findUserByEmailIdAndMobileNo(emailId,mobileNo);
+        return null;
+    }
 }

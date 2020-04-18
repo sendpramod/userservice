@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 "Some custom description of API.",
                 "API TOS",
                 "Terms of service",
-                new Contact("Pramod", "www.test.com", "sendpramod@gmail.com"),
+                new Contact("Echotech", "www.test.com", "sendpramod@gmail.com"),
                 "License of API", "@Copyright all rights reserved", Collections.emptyList());
     }
 }
